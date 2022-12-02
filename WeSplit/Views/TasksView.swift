@@ -28,13 +28,17 @@ struct TasksView: View {
                         .swipeActions(edge: .trailing){
                             Button(role: .destructive){
                                 relamManager.deleteTask(id: task.id)
+                                    
                             }label: {
                                 Label("Delete", systemImage: "trash")
                             }
+                            
+                        
                         }
                     }
                    
                 }
+              
                 .listRowSeparator(.hidden)
                 
             }
